@@ -1,0 +1,160 @@
+/*
+- Contenedores
+- Hora
+- Hovers
+- Responsive
+
+*/
+
+
+
+/*Contenedor*/
+.Contenedor_Hora {
+  position: absolute;
+  text-align: center;
+}
+
+/*HORA 1*/
+.hora_js{
+  font-family: ds-digital;
+  font-size: 50px;
+}
+
+.Hora {
+  position: absolute;
+  font-family: ds-digital;
+  font-size: 65px;
+  padding: 60px 40px 30px 40px;
+
+  margin-top: 20px;
+  margin-left: 110px;
+
+  color: rgba(230, 230, 230, 0.954);
+  background-color: #141d328a;
+  border: rgba(230, 230, 230, 0.853) 2px solid;
+  border-radius: 50%;
+
+  User-select: none;
+
+  transition: margin .3s, padding .3s;
+}
+
+.Segundos {
+  font-size: 20px;
+}
+
+/*HOVERS*/
+.Hora:hover{
+  margin-top: 22px;
+  margin-left: 115px;
+  padding: 58px 34px 24px 34px;
+
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1400px) {
+ 
+  .hora_js{
+    font-size: 50px;
+  }
+
+
+  .Hora{
+    margin-left: 90px;
+    padding: 48px 25px 20px 25px;
+  }
+
+  .Hora:hover{
+    margin-top: 25px;
+    margin-left: 92px;
+    padding: 42px 22px 18px 22px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+ 
+  .hora_js{
+    font-size: 40px;
+  }
+
+  
+  .Hora{
+    margin-left: 80px;
+    padding: 35px 20px 15px 20px;
+  }
+
+  .Hora:hover{
+    margin-top: 23px;
+    margin-left: 82px;
+    padding: 33px 18px 13px 18px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .hora_js{
+    font-size: 35px;
+  }
+
+  .Segundos {
+    font-size: 15px;
+  }
+
+  .Hora{
+    margin-left: 90px;
+    padding: 30px 15px 5px 15px;
+  }
+
+  .Hora:hover{
+    margin-top: 23px;
+    margin-left: 90px;
+    padding: 28px 14px 3px 14px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .hora_js{
+    font-size: 25px;
+  }
+
+  .Segundos {
+    font-size: 12px;
+  }
+
+  .Hora{
+    margin-left: 65px;
+    padding: 20px 13px 2px 13px;
+  }
+
+  .Hora:hover{
+    margin-left: 67px;
+    padding: 18px 11px 0px 11px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .hora_js{
+    font-size: 65px;
+  }
+
+  .Segundos {
+    font-size: 25px;
+  }
+ 
+  .Hora{
+    font-size: 65px;
+    padding: 70px 40px 40px 40px;
+    margin-top: 20px;
+    margin-left: 145px;
+  }
+
+  .Hora:hover{
+    font-size: 65px;
+    padding: 62px 32px 32px 32px;
+    margin-top: 27px;
+    margin-left: 152px;
+  }
+
+}

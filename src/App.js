@@ -1,25 +1,57 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header'
+import Contenedor_Principal from './Components/Contenedor_Principal';
+import Footer from './Components/Footer';
+import Reloj_Horas_Minutos from './Components/Reloj_Horas_Minutos';
+import Reloj_Segundos from './Components/Reloj_Segundos';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
-function App() {
+
+function App() {   
+  
+  const [quote, setQuote] = useState('')
+  const [author, setAuthor] = useState('')
+
+  useEffect(() => {
+    fetch('http://api.quotable.io/random')
+      .then(res => res.json())
+      .then(
+        (quote) => {
+          setQuote(quote.content);
+          setAuthor(quote.author)    
+        }         
+      )  
+  }, [])
+
+
+  let fetchNewQuote = () => {
+    fetch('http://api.quotable.io/random')
+    .then(res => res.json())
+    .then(
+      (quote) => {
+        setQuote(quote.content);
+        setAuthor(quote.author)    
+      }         
+    ) 
+  }
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Contenedor_Principal
+        horas_minutos={<Reloj_Horas_Minutos />}
+        segundos={<Reloj_Segundos />}
+        frase= {quote}
+        autor={'- ' + author}
+        click= {fetchNewQuote}
+      />
+      
+      <Footer />
+      
     </div>
   );
+
 }
 
 export default App;
