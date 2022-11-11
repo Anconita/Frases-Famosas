@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Style-Sheets/Contenedor_Principal.css'
 
-const Contenedor_Principal = (props) => {
+const ContenedorPrincipal = (props) => {
 
   return (
     <div className='container'>
@@ -33,4 +33,4 @@ const Contenedor_Principal = (props) => {
 }
 
 
-export default Contenedor_Principal;
+export default ContenedorPrincipal;
