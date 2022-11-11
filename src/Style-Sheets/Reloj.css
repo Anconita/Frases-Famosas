@@ -158,3 +158,103 @@
   }
 
 }
+
+@media screen and (max-width: 475px){
+  .hora_js{
+    font-size: 65px;
+  }
+
+  .Segundos {
+    font-size: 25px;
+  }
+ 
+  .Hora{
+    font-size: 65px;
+    padding: 70px 40px 40px 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  .Hora:hover{
+    font-size: 65px;
+    padding: 62px 32px 32px 32px;
+    margin-top: 27px;
+    margin-left: 152px;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+  .hora_js{
+    font-size: 65px;
+  }
+
+  .Segundos {
+    font-size: 25px;
+  }
+ 
+  .Hora{
+    font-size: 65px;
+    padding: 70px 40px 40px 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  .Hora:hover{
+    font-size: 65px;
+    padding: 62px 32px 32px 32px;
+    margin-top: 27px;
+    margin-left: 152px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .hora_js{
+    font-size: 65px;
+  }
+
+  .Segundos {
+    font-size: 25px;
+  }
+ 
+  .Hora{
+    font-size: 65px;
+    padding: 70px 40px 40px 40px;
+    margin-top: 20px;
+    margin-left: 65px;
+  }
+
+  .Hora:hover{
+    font-size: 65px;
+    padding: 62px 32px 32px 32px;
+    margin-top: 27px;
+    margin-left: 152px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .hora_js{
+    font-size: 65px;
+  }
+
+  .Segundos {
+    font-size: 25px;
+  }
+ 
+  .Hora{
+    font-size: 65px;
+    padding: 70px 40px 40px 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .Hora:hover{
+    font-size: 65px;
+    padding: 62px 32px 32px 32px;
+    margin-top: 27px;
+    margin-left: 152px;
+  }
+
+}

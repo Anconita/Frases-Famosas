@@ -179,3 +179,57 @@
     min-width: 250px;
   }
 }
+
+@media screen and (max-width: 520px){
+  .Contenedor_Frase_Autor{
+    margin-left: 23px;
+    max-width: 450px;
+    min-width: 450px;
+  }
+
+  .Boton-Siguiente{
+    margin-right: 450px;
+    margin-bottom: 200px;
+    min-width: 250px;
+  }
+
+  .Frase{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .Contenedor_Frase_Autor{
+    margin-left: 23px;
+    max-width: 400px;
+    min-width: 400px;
+  }
+
+  .Boton-Siguiente{
+    margin-right: 450px;
+    margin-bottom: 200px;
+    min-width: 250px;
+  }
+
+  .Frase{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .Contenedor_Frase_Autor{
+    margin-left: 23px;
+    max-width: 350px;
+    min-width: 350px;
+  }
+
+  .Boton-Siguiente{
+    margin-right: 450px;
+    margin-bottom: 200px;
+    min-width: 250px;
+  }
+
+  .Frase{
+    font-size: 17px;
+  }
+}
