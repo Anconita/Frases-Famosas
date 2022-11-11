@@ -17,10 +17,10 @@ const Header = () => {
 
         {/*ICONOS HEADER*/}
         <div className='Contenedor_Iconos col'>
-          <a className='Link_Icono_Youtube' href="https://www.youtube.com/" target='_blank'>
+          <a className='Link_Icono_Youtube' href="https://www.youtube.com/" target='_blank' rel="noreferrer">
           <i className="Icono_Youtube bi bi-youtube"></i>
           </a>
-          <a className='Link_Icono_Github' href="https://github.com/Anconita" target='_blank'>
+          <a className='Link_Icono_Github' href="https://github.com/Anconita" target='_blank' rel="noreferrer">
           <i className="Icono_Github bi bi-github"></i>
           </a>
         </div>

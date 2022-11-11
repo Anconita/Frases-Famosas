@@ -2,8 +2,8 @@ import './App.css';
 import Header from './Components/Header'
 import ContenedorPrincipal from './Components/Contenedor_Principal';
 import Footer from './Components/Footer';
-import Reloj_Horas_Minutos from './Components/Reloj_Horas_Minutos';
-import Reloj_Segundos from './Components/Reloj_Segundos';
+import RelojHorasMinutos from './Components/Reloj_Horas_Minutos';
+import RelojSegundos from './Components/Reloj_Segundos';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -40,8 +40,8 @@ function App() {
     <div className="App">
       <Header />
       <ContenedorPrincipal
-        horas_minutos={<Reloj_Horas_Minutos />}
-        segundos={<Reloj_Segundos />}
+        horas_minutos={<RelojHorasMinutos />}
+        segundos={<RelojSegundos />}
         frase= {quote}
         autor={'- ' + author}
         click= {fetchNewQuote}

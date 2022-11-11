@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../Style-Sheets/Reloj.css'
 
-const Reloj_Horas_Minutos = () => {
+const RelojHorasMinutos = () => {
   let tiempo = new Date();
   let horas = tiempo.getHours();
   let minutos = tiempo.getMinutes();
@@ -16,7 +16,7 @@ const Reloj_Horas_Minutos = () => {
 
   let Mostrar_Horas_Minutos = (horas + ':' + minutos);
 
-  const [time, setTime] = useState(tiempo);
+  const [, setTime] = useState(tiempo);
 
   const actualizarTiempo = () => {
     let tiempo = new Date();
@@ -33,7 +33,7 @@ const Reloj_Horas_Minutos = () => {
   );
 }
 
-export default Reloj_Horas_Minutos;
+export default RelojHorasMinutos;
 
 
 
